@@ -1,0 +1,208 @@
+:root {
+  --album--image: url(../img/albumcover.jpg);
+}
+
+body{
+  margin: 0;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+#header{
+  display: flex;
+  color:white;
+  background: linear-gradient(#5f5151, 50%, rgb(10, 10, 10));
+  padding: 20px;
+  column-gap: 10px;
+}
+#cover{
+  width: 275px;
+  padding-right: 10px;
+}
+
+#playlist{
+  font-size: 100%;
+  position: relative;
+  top: 100px;
+  /*border: 3px solid #73AD21;*/
+}
+
+  #playlist-name{
+  font-size: 250%;
+  position: relative;
+  top: 10px;
+  }
+
+  #playlist-footer{
+    position: relative;
+    top: 20px;
+  }
+  
+  #pause-button{
+    color:white;
+    position: relative;
+    top:-70px;
+    left:310px;
+    
+    /*----------------------------------*/
+    background-color: rgb(29,185,84);
+    padding: 10px;
+    border-radius: 35px;
+    width: 4%;
+    /*----------------------------------*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  #head-playlist{
+    position: relative;
+    top:70px;
+    left:100px;
+    word-spacing: 400px;
+        /*----------------------------------*/
+    font-size: 13px;
+    color:rgb(129, 129, 129);
+    /*border: 2px solid red;*/
+    width:80%
+  }
+
+  #lista{
+    position: relative;
+    top:70px;
+    left:100px;
+    list-style-type: none;
+    /*----------------------------------*/
+    font-size: 16px;
+    width: 90%;
+    word-spacing: 530px;
+  }
+  
+#artista{
+  border-color: #5f515100;
+  border-style: hidden;
+  border-bottom: hidden;
+  position:absolute;
+  top:446px;
+  left: 570px;
+  font-size: 15px;
+  word-spacing: 215px;
+  
+}
+#ordem{
+  display:none;
+}
+
+#playlist-footer2{
+  display: none;
+  
+}
+#adicionar{
+  display:none;
+}
+#artista2{display:none;}
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  #header{
+    display: flex;
+    color:white;
+    background: linear-gradient(#5f5151, 50%, rgb(10, 10, 10));
+    padding: 20px;
+  }
+ 
+  #playlist{
+    top:530px;
+    left:130px;
+    position:absolute;
+    
+  }
+  #playlist-footer2{
+    display: block;
+    color:gray;
+    font-size:15px;
+    position:relative;
+    top: 20px;
+    left: -5px;
+  }
+  /*--------------------------------*/
+  h{display:none}
+  #artista2{display:block;}
+  #artista{display:none}
+  #head-playlist{display:none;}
+  #pause-button{display:none;}
+  #playlist-footer{display:none;}
+  #adicionar{
+    display:block;
+    color:white;
+    position: absolute;
+    top:770px;
+    left:200px;
+    /*----------------------------------*/
+    border-color:white;
+    border-style:solid;
+    padding: 30px;
+    border-radius: 65px;
+    width: 25%;
+    /*----------------------------------*/
+    font-family: 'Raleway', sans-serif;
+    font-size:12px;
+    text-align: center;
+  }
+/*--------------------------------*/
+  #cover{
+    padding:50px;
+    width: 80%;
+    align-self: center;
+  }
+  #ordem{
+    display:block;
+    color:white;
+    position: absolute;
+    top:660px;
+    left:150px;
+    /*----------------------------------*/
+    background-color: rgb(29,185,84);
+    padding: 30px;
+    border-radius: 65px;
+    width: 40%;
+    /*----------------------------------*/
+    font-family: 'Raleway', sans-serif;
+    font-size:20px;
+    text-align: center;
+  }
+
+  #lista{
+    position: relative;
+    top:270px;
+    left:100px;
+    list-style-type: none;
+    /*----------------------------------*/
+    font-size: 16px;
+    width: 70%;
+    word-spacing: 530px;
+  }
+  
+#artista2{
+  position:absolute;
+  top:850px;
+  left:150px;
+  font-size: 11px;
+  width:75%;
+  
+  color:grey;
+  border-color: #5f515100;
+  border-style: hidden;
+  border-bottom: hidden;
+  word-spacing: 5px;
+  
+}
+}
